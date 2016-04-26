@@ -1,0 +1,18 @@
+# Uncomment this line to define a global platform for your project
+platform :ios, '8.0'
+use_frameworks!
+target 'BasicNavApp' do
+pod 'Alamofire', '~> 3.3'   #This Lib is used to do connections to server e.g. image uploader, json, soap requests/response
+pod 'SWXMLHash', '~> 2.0.0'
+pod 'APAvatarImageView'
+pod 'MapleBacon'
+pod 'DynamicColor', '~> 2.1'
+pod 'XCDYouTubeKit', '2.2.0'
+pod 'IQKeyboardManagerSwift'
+pod 'SwiftyJSON', :git => 'https://github.com/SwiftyJSON/SwiftyJSON.git'
+
+end
+
+#To search for more library, go to Cocoapods.com -> Search for the feature you want -> Copy Pod msg
+#~>3.3 = Version should be at least this version
+#2.2.0 = Version should = this version

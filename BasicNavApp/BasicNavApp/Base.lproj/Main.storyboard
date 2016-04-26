@@ -154,10 +154,10 @@
             </objects>
             <point key="canvasLocation" x="417" y="436"/>
         </scene>
-        <!--View Controller-->
+        <!--Page Five View Controller-->
         <scene sceneID="YE3-rS-k00">
             <objects>
-                <viewController id="Gh6-Y9-Poq" sceneMemberID="viewController">
+                <viewController id="Gh6-Y9-Poq" customClass="PageFiveViewController" customModule="BasicNavApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="s4f-BU-s8d">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -169,10 +169,10 @@
             </objects>
             <point key="canvasLocation" x="1036" y="1288"/>
         </scene>
-        <!--View Controller-->
+        <!--Page Two View Controller-->
         <scene sceneID="YDz-6p-ndH">
             <objects>
-                <viewController id="0NC-xN-99x" sceneMemberID="viewController">
+                <viewController id="0NC-xN-99x" customClass="PageTwoViewController" customModule="BasicNavApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9oT-wr-ui6">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -184,10 +184,10 @@
             </objects>
             <point key="canvasLocation" x="-16" y="1288"/>
         </scene>
-        <!--View Controller-->
+        <!--Page Four View Controller-->
         <scene sceneID="Zb8-p0-zal">
             <objects>
-                <viewController id="dor-25-lvY" sceneMemberID="viewController">
+                <viewController id="dor-25-lvY" customClass="PageFourViewController" customModule="BasicNavApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8mQ-v9-VqT">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -199,16 +199,76 @@
             </objects>
             <point key="canvasLocation" x="687" y="1288"/>
         </scene>
-        <!--View Controller-->
+        <!--Page Three View Controller-->
         <scene sceneID="bKa-hH-tu4">
             <objects>
-                <viewController id="E5W-sp-8HS" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="h8M-Mw-gD4">
+                <viewController id="E5W-sp-8HS" customClass="PageThreeViewController" customModule="BasicNavApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Dze-HT-r6V">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="listview_iphone.png" id="wZa-I7-ELR">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="220" sectionHeaderHeight="28" sectionFooterHeight="28" id="c6m-gv-eYg">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <inset key="contentInset" minX="0.0" minY="250" maxX="0.0" maxY="0.0"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ContentCell" rowHeight="210" id="Wsy-Qc-J7x" customClass="ContentTableViewCell" customModule="BasicNavApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="278" width="320" height="210"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Wsy-Qc-J7x" id="hUa-Li-wtn">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="210"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="tTO-Gj-BEu" customClass="APAvatarImageView">
+                                                    <rect key="frame" x="13" y="0.0" width="44" height="44"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="UHz-4k-KEU">
+                                                    <rect key="frame" x="13" y="52" width="293" height="144"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" alpha="0.84999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="L7y-3G-28p">
+                                                    <rect key="frame" x="65" y="0.0" width="241" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SubTitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Vp6-p4-d5r">
+                                                    <rect key="frame" x="65" y="23" width="241" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="mAvatarImg" destination="tTO-Gj-BEu" id="EJI-L5-o0M"/>
+                                            <outlet property="mSubTitle" destination="Vp6-p4-d5r" id="rmE-Lc-LEI"/>
+                                            <outlet property="mTitle" destination="L7y-3G-28p" id="74c-hN-iXt"/>
+                                            <outlet property="mYouTubeImg" destination="UHz-4k-KEU" id="WbZ-sC-s0v"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="E5W-sp-8HS" id="Hfk-Jg-VeC"/>
+                                    <outlet property="delegate" destination="E5W-sp-8HS" id="w1r-cM-ePy"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="T9S-un-Urp"/>
+                    <connections>
+                        <outlet property="mTableView" destination="c6m-gv-eYg" id="fBu-vA-Twf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bfo-cn-EZT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -230,10 +290,10 @@
             </objects>
             <point key="canvasLocation" x="-20.266666666666666" y="436.41333333333336"/>
         </scene>
-        <!--View Controller-->
+        <!--Page One View Controller-->
         <scene sceneID="Emy-GG-T74">
             <objects>
-                <viewController id="ykT-iR-EUm" sceneMemberID="viewController">
+                <viewController id="ykT-iR-EUm" customClass="PageOneViewController" customModule="BasicNavApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1qa-Av-4cQ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -273,5 +333,6 @@
         <image name="3.png" width="95" height="95"/>
         <image name="5.png" width="95" height="95"/>
         <image name="ios_online_banner.png" width="641" height="381"/>
+        <image name="listview_iphone.png" width="640" height="1136"/>
     </resources>
 </document>

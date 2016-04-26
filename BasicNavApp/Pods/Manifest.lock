@@ -1,0 +1,40 @@
+PODS:
+  - Alamofire (3.3.1)
+  - APAvatarImageView (1.1.0)
+  - DynamicColor (2.4.0)
+  - IQKeyboardManagerSwift (4.0.2)
+  - MapleBacon (2.0.8)
+  - SwiftyJSON (2.3.2)
+  - SWXMLHash (2.0.2)
+  - XCDYouTubeKit (2.2.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 3.3)
+  - APAvatarImageView
+  - DynamicColor (~> 2.1)
+  - IQKeyboardManagerSwift
+  - MapleBacon
+  - SwiftyJSON (from `https://github.com/SwiftyJSON/SwiftyJSON.git`)
+  - SWXMLHash (~> 2.0.0)
+  - XCDYouTubeKit (= 2.2.0)
+
+EXTERNAL SOURCES:
+  SwiftyJSON:
+    :git: https://github.com/SwiftyJSON/SwiftyJSON.git
+
+CHECKOUT OPTIONS:
+  SwiftyJSON:
+    :commit: 2a5b70f06001316d4fb54501edc70b4084705da0
+    :git: https://github.com/SwiftyJSON/SwiftyJSON.git
+
+SPEC CHECKSUMS:
+  Alamofire: 369bc67b6f5ac33ded3648d7bd21c5bfb91c2ecc
+  APAvatarImageView: 428dbd0631a150fe876f90bfd7eaa275a19b9209
+  DynamicColor: 2f3fd61053684667bad9f03045dcf9a2a5a007ea
+  IQKeyboardManagerSwift: 2f2c19c509f67c4c0df2826db54033d3e090ce65
+  MapleBacon: 32e3590e1730485b93f450283ff242f9444efc12
+  SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
+  SWXMLHash: 9e6bd7db2e8275eaf3d2082265623d6e749e169d
+  XCDYouTubeKit: 920ff5dfdf37f0f41b19610c5270b2ed23b05b13
+
+COCOAPODS: 0.39.0
